@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>青娱乐最新入口 - 官方品牌门户,青春影像内容生态</title>
+<meta name="description" content="青娱乐官方网站，面向年轻创作者与观众的青春影像内容生态平台，提供原创正版高清视频内容、创作者社区与企业动态，持续运营值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f2f3d'/%3E%3Cpath d='M24 18l22 14-22 14z' fill='%2338e0c8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --qyl-ink:#0f2f3d;
+  --qyl-ink-soft:#1d4453;
+  --qyl-teal:#1fbfa5;
+  --qyl-teal-deep:#0f8d7a;
+  --qyl-mint:#e6f7f4;
+  --qyl-paper:#f5f9f9;
+  --qyl-line:#d6e6e3;
+  --qyl-text:#20404b;
+  --qyl-muted:#5f7d84;
+  --qyl-shadow:0 10px 30px rgba(15,47,61,.10);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:118px;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:var(--qyl-paper);
+  color:var(--qyl-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--qyl-ink);}
+p{margin:0 0 1em;}
+ul{margin:0;padding:0;list-style:none;}
+
+/* ---------- sticky shell ---------- */
+.qyl-sticky-shell{position:sticky;top:0;z-index:60;}
+
+/* ---------- announcement ---------- */
+.qyl-announcement{
+  background:linear-gradient(90deg,var(--qyl-ink),#173a48 55%,#0f2f3d);
+  color:#c9f5ee;
+  font-size:.82rem;
+  border-bottom:1px solid rgba(56,224,200,.25);
+}
+.qyl-announcement__inner{
+  max-width:1220px;margin:0 auto;padding:.5rem 1.25rem;
+  display:flex;gap:.9rem;align-items:center;flex-wrap:wrap;
+}
+.qyl-announcement__badge{
+  background:var(--qyl-teal);color:#043028;font-weight:700;
+  font-size:.7rem;letter-spacing:.06em;padding:.1rem .5rem;border-radius:999px;
+  flex:none;
+}
+.qyl-announcement__text{flex:1 1 320px;min-width:0;}
+.qyl-announcement__link{
+  color:#8ef0e2;border-bottom:1px dashed rgba(142,240,226,.55);
+  white-space:nowrap;
+}
+.qyl-announcement__link:hover{color:#fff;}
+
+/* ---------- header ---------- */
+.qyl-header{background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--qyl-line);}
+.qyl-header__inner{
+  max-width:1220px;margin:0 auto;padding:.7rem 1.25rem;
+  display:flex;align-items:center;gap:1rem;
+}
+.qyl-brand{display:flex;align-items:center;gap:.6rem;flex:none;}
+.qyl-brand__mark{
+  width:40px;height:40px;border-radius:12px;flex:none;
+  background:radial-gradient(circle at 30% 25%,#38e0c8,#0f8d7a 70%);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 14px rgba(31,191,165,.35);
+}
+.qyl-brand__mark svg{width:18px;height:18px;fill:#043028;}
+.qyl-brand__name{font-size:1.15rem;font-weight:800;letter-spacing:.02em;color:var(--qyl-ink);}
+.qyl-brand__slogan{font-size:.68rem;color:var(--qyl-muted);letter-spacing:.14em;}
+.qyl-nav{flex:1;display:flex;justify-content:center;}
+.qyl-nav__list{display:flex;gap:.3rem;flex-wrap:wrap;}
+.qyl-nav__link{
+  display:inline-block;padding:.42rem .72rem;border-radius:999px;
+  font-size:.9rem;color:var(--qyl-ink-soft);transition:.2s;
+}
+.qyl-nav__link:hover,.qyl-nav__link.is-active{background:var(--qyl-mint);color:var(--qyl-teal-deep);}
+.qyl-header__tools{display:flex;align-items:center;gap:.55rem;flex:none;}
+.qyl-search{position:relative;display:flex;align-items:center;}
+.qyl-search__input{
+  width:180px;padding:.45rem 2.1rem .45rem .8rem;border-radius:999px;
+  border:1px solid var(--qyl-line);background:#fff;font-size:.85rem;color:var(--qyl-text);
+  outline:none;transition:.25s;
+}
+.qyl-search__input:focus{width:230px;border-color:var(--qyl-teal);box-shadow:0 0 0 3px rgba(31,191,165,.15);}
+.qyl-search__btn{
+  position:absolute;right:4px;width:28px;height:28px;border:0;border-radius:50%;
+  background:var(--qyl-teal);display:flex;align-items:center;justify-content:center;
+}
+.qyl-search__btn svg{width:14px;height:14px;fill:#fff;}
+.qyl-search__hint{
+  position:absolute;top:calc(100% + 8px);left:0;right:0;background:#fff;
+  border:1px solid var(--qyl-line);border-radius:12px;box-shadow:var(--qyl-shadow);
+  padding:.4rem;font-size:.82rem;display:none;z-index:70;
+}
+.qyl-search__hint.is-open{display:block;}
+.qyl-search__hint li{padding:.32rem .5rem;border-radius:8px;color:var(--qyl-ink-soft);cursor:pointer;}
+.qyl-search__hint li:hover{background:var(--qyl-mint);}
+.qyl-search__hint li em{color:var(--qyl-teal-deep);font-style:normal;font-weight:700;}
+.qyl-burger{
+  display:none;width:40px;height:40px;border:1px solid var(--qyl-line);border-radius:12px;
+  background:#fff;align-items:center;justify-content:center;
+}
+.qyl-burger span,.qyl-burger span::before,.qyl-burger span::after{
+  display:block;width:18px;height:2px;background:var(--qyl-ink);content:"";position:relative;border-radius:2px;
+}
+.qyl-burger span::before{position:absolute;top:-6px;}
+.qyl-burger span::after{position:absolute;top:6px;}
+.qyl-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--qyl-line);}
+.qyl-mobile-nav.is-open{display:block;}
+.qyl-mobile-nav ul{padding:.5rem 1.25rem 1rem;display:grid;gap:.2rem;}
+.qyl-mobile-nav a{display:block;padding:.55rem .6rem;border-radius:10px;font-size:.92rem;color:var(--qyl-ink-soft);}
+.qyl-mobile-nav a:hover{background:var(--qyl-mint);}
+
+/* ---------- layout ---------- */
+.qyl-wrap{max-width:1220px;margin:0 auto;padding:0 1.25rem;}
+.qyl-section{padding:3.4rem 0;}
+.qyl-section--tint{background:linear-gradient(180deg,#fff,var(--qyl-mint));}
+.qyl-section--deep{background:var(--qyl-ink);color:#cfe6e6;}
+.qyl-section--deep h2,.qyl-section--deep h3{color:#fff;}
+.qyl-section-head{max-width:760px;margin-bottom:1.9rem;}
+.qyl-eyebrow{
+  display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--qyl-teal-deep);font-weight:700;margin-bottom:.6rem;
+}
+.qyl-eyebrow::before{content:"";width:22px;height:2px;background:var(--qyl-teal);border-radius:2px;}
+.qyl-section--deep .qyl-eyebrow{color:#7de6d6;}
+.qyl-section-head h2{font-size:clamp(1.45rem,2.6vw,2rem);letter-spacing:.01em;}
+.qyl-section-head p{color:var(--qyl-muted);margin-top:.6rem;font-size:.95rem;}
+.qyl-section--deep .qyl-section-head p{color:#a9ccce;}
+
+/* ---------- buttons ---------- */
+.qyl-btn{
+  display:inline-flex;align-items:center;gap:.45rem;border-radius:999px;
+  padding:.6rem 1.25rem;font-size:.9rem;font-weight:600;border:1px solid transparent;
+  transition:transform .18s ease,box-shadow .2s,background .2s,color .2s;
+}
+.qyl-btn:hover{transform:translateY(-2px);}
+.qyl-btn--primary{background:var(--qyl-teal);color:#043028;box-shadow:0 8px 18px rgba(31,191,165,.32);}
+.qyl-btn--primary:hover{background:#38e0c8;}
+.qyl-btn--ghost{background:#fff;color:var(--qyl-ink);border-color:var(--qyl-line);}
+.qyl-btn--ghost:hover{border-color:var(--qyl-teal);color:var(--qyl-teal-deep);}
+.qyl-btn--soft{background:rgba(31,191,165,.12);color:var(--qyl-teal-deep);}
+.qyl-btn--line{background:transparent;color:#cfe6e6;border-color:rgba(125,230,214,.4);}
+.qyl-btn--line:hover{background:rgba(125,230,214,.12);color:#fff;}
+
+/* ---------- hero ---------- */
+.qyl-hero{padding:2.6rem 0 1rem;}
+.qyl-hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:2.4rem;align-items:center;}
+.qyl-hero__title{font-size:clamp(2.4rem,5vw,3.6rem);letter-spacing:.02em;}
+.qyl-hero__title small{display:block;font-size:.85rem;letter-spacing:.3em;color:var(--qyl-teal-deep);font-weight:700;margin-bottom:.7rem;}
+.qyl-hero__lead{font-size:1.02rem;color:var(--qyl-ink-soft);margin-top:1rem;max-width:38em;}
+.qyl-hero__meta{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.2rem 0;}
+.qyl-chip{
+  display:inline-block;padding:.22rem .7rem;border-radius:999px;font-size:.76rem;
+  background:#fff;border:1px solid var(--qyl-line);color:var(--qyl-ink-soft);
+}
+.qyl-chip--accent{background:var(--qyl-mint);border-color:transparent;color:var(--qyl-teal-deep);font-weight:600;}
+.qyl-hero__actions{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:.4rem;}
+.qyl-hero__stats{display:grid;grid-template-columns:repeat(3,1fr);gap:.9rem;margin-top:1.8rem;}
+.qyl-stat{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:16px;padding:.9rem .9rem .8rem;
+  box-shadow:0 6px 16px rgba(15,47,61,.05);
+}
+.qyl-stat__num{font-size:1.5rem;font-weight:800;color:var(--qyl-teal-deep);letter-spacing:.01em;}
+.qyl-stat__num span{font-size:.8rem;font-weight:600;color:var(--qyl-muted);margin-left:.15rem;}
+.qyl-stat__label{font-size:.76rem;color:var(--qyl-muted);}
+.qyl-hero__visual{position:relative;}
+.qyl-hero__frame{
+  border-radius:22px;overflow:hidden;box-shadow:var(--qyl-shadow);
+  border:1px solid rgba(15,47,61,.08);background:#fff;
+}
+.qyl-hero__frame img{width:100%;height:auto;display:block;}
+.qyl-hero__float{
+  position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:14px;
+  padding:.6rem .9rem;box-shadow:var(--qyl-shadow);border:1px solid var(--qyl-line);
+  font-size:.78rem;color:var(--qyl-ink-soft);display:flex;gap:.5rem;align-items:center;
+}
+.qyl-hero__float strong{color:var(--qyl-teal-deep);font-size:.95rem;}
+.qyl-dot{width:9px;height:9px;border-radius:50%;background:var(--qyl-teal);box-shadow:0 0 0 4px rgba(31,191,165,.18);}
+
+/* ---------- intro / analysis ---------- */
+.qyl-analysis{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:22px;
+  padding:2rem clamp(1.1rem,3vw,2.4rem);box-shadow:0 12px 30px rgba(15,47,61,.05);
+}
+.qyl-analysis h2{font-size:clamp(1.4rem,2.4vw,1.8rem);margin-bottom:1rem;}
+.qyl-analysis h3{font-size:1.05rem;margin:1.6rem 0 .5rem;color:var(--qyl-teal-deep);}
+.qyl-analysis p{color:#2c4d58;font-size:.96rem;}
+.qyl-analysis ul{margin:.2rem 0 1rem;padding-left:0;display:grid;gap:.4rem;}
+.qyl-analysis li{
+  position:relative;padding-left:1.2rem;font-size:.94rem;color:#2c4d58;
+}
+.qyl-analysis li::before{
+  content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:2px;
+  background:var(--qyl-teal);
+}
+.qyl-analysis__cols{display:grid;grid-template-columns:1fr 1fr;gap:0 2.2rem;}
+
+/* ---------- cards ---------- */
+.qyl-card{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:18px;overflow:hidden;
+  transition:transform .22s ease,box-shadow .25s,border-color .25s;
+  display:flex;flex-direction:column;
+}
+.qyl-card:hover{transform:translateY(-5px);box-shadow:var(--qyl-shadow);border-color:rgba(31,191,165,.45);}
+.qyl-cover{position:relative;overflow:hidden;background:#0f2f3d;}
+.qyl-cover img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/9;display:block;transition:transform .5s ease;}
+.qyl-card:hover .qyl-cover img{transform:scale(1.05);}
+.qyl-cover__tag{
+  position:absolute;top:.6rem;left:.6rem;background:rgba(4,48,40,.78);color:#8ef0e2;
+  font-size:.68rem;padding:.12rem .5rem;border-radius:999px;letter-spacing:.05em;
+  backdrop-filter:blur(4px);
+}
+.qyl-cover__play{
+  position:absolute;right:.6rem;bottom:.6rem;width:30px;height:30px;border-radius:50%;
+  background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;
+}
+.qyl-cover__play svg{width:11px;height:11px;fill:var(--qyl-teal-deep);margin-left:2px;}
+.qyl-cover__shade{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(4,22,28,0) 40%,rgba(4,22,28,.55));
+}
+.qyl-card__body{padding:1rem 1.05rem 1.1rem;display:flex;flex-direction:column;gap:.45rem;flex:1;}
+.qyl-card__title{font-size:1rem;font-weight:700;color:var(--qyl-ink);line-height:1.5;}
+.qyl-card__desc{font-size:.84rem;color:var(--qyl-muted);margin:0;flex:1;}
+.qyl-card__foot{display:flex;align-items:center;justify-content:space-between;gap:.5rem;padding-top:.55rem;border-top:1px dashed var(--qyl-line);}
+.qyl-card__author{display:flex;align-items:center;gap:.45rem;font-size:.78rem;color:var(--qyl-ink-soft);cursor:pointer;}
+.qyl-card__author:hover{color:var(--qyl-teal-deep);}
+.qyl-avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  font-size:.72rem;font-weight:800;color:#043028;
+}
+.qyl-card__stats{font-size:.74rem;color:var(--qyl-muted);display:flex;gap:.55rem;}
+.qyl-card__ops{display:flex;gap:.35rem;align-items:center;margin-top:.35rem;}
+.qyl-icon-btn{
+  display:inline-flex;align-items:center;gap:.28rem;border:1px solid var(--qyl-line);
+  background:#fff;border-radius:999px;padding:.22rem .6rem;font-size:.74rem;color:var(--qyl-muted);
+  transition:.2s;
+}
+.qyl-icon-btn:hover{border-color:var(--qyl-teal);color:var(--qyl-teal-deep);}
+.qyl-icon-btn.is-liked{background:rgba(31,191,165,.12);border-color:var(--qyl-teal);color:var(--qyl-teal-deep);}
+.qyl-icon-btn.is-saved{background:rgba(255,143,168,.14);border-color:#ff8fa8;color:#c8445f;}
+.qyl-icon-btn svg{width:12px;height:12px;fill:currentColor;}
+
+/* ---------- focus ---------- */
+.qyl-focus{display:grid;grid-template-columns:1.15fr .85fr;gap:1.3rem;}
+.qyl-focus__big .qyl-cover img{aspect-ratio:16/9;}
+.qyl-focus__big .qyl-card__title{font-size:1.18rem;}
+.qyl-focus__side{display:grid;gap:1rem;}
+.qyl-focus__side .qyl-card{flex-direction:row;}
+.qyl-focus__side .qyl-cover{width:42%;flex:none;}
+.qyl-focus__side .qyl-cover img{aspect-ratio:16/11;height:100%;}
+.qyl-focus__side .qyl-card__body{padding:.8rem .9rem;}
+
+/* ---------- grid lists ---------- */
+.qyl-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;}
+.qyl-grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;}
+
+/* ---------- topics ---------- */
+.qyl-topic{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:18px;padding:1.15rem;
+  display:flex;flex-direction:column;gap:.5rem;transition:.22s;
+}
+.qyl-topic:hover{border-color:rgba(31,191,165,.5);box-shadow:var(--qyl-shadow);transform:translateY(-4px);}
+.qyl-topic__top{display:flex;justify-content:space-between;align-items:center;gap:.5rem;}
+.qyl-topic__no{font-size:.72rem;letter-spacing:.16em;color:var(--qyl-muted);font-weight:700;}
+.qyl-status{font-size:.7rem;padding:.1rem .5rem;border-radius:999px;background:var(--qyl-mint);color:var(--qyl-teal-deep);font-weight:700;}
+.qyl-status--warm{background:#fff1e6;color:#c96a17;}
+.qyl-status--calm{background:#eaf0ff;color:#3f5bd6;}
+.qyl-topic h3{font-size:1rem;}
+.qyl-topic p{font-size:.84rem;color:var(--qyl-muted);margin:0;flex:1;}
+.qyl-topic__foot{font-size:.76rem;color:var(--qyl-teal-deep);font-weight:600;}
+
+/* ---------- creators ---------- */
+.qyl-creator{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:18px;padding:1.1rem;
+  display:flex;flex-direction:column;gap:.55rem;transition:.22s;text-align:left;
+}
+.qyl-creator:hover{transform:translateY(-4px);box-shadow:var(--qyl-shadow);}
+.qyl-creator__head{display:flex;align-items:center;gap:.7rem;}
+.qyl-creator__avatar{
+  width:52px;height:52px;border-radius:16px;flex:none;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:1.1rem;color:#043028;
+}
+.qyl-creator__name{font-weight:800;color:var(--qyl-ink);font-size:.98rem;}
+.qyl-creator__field{font-size:.74rem;color:var(--qyl-teal-deep);font-weight:600;}
+.qyl-creator__bio{font-size:.82rem;color:var(--qyl-muted);margin:0;flex:1;}
+.qyl-creator__nums{display:flex;gap:.9rem;font-size:.76rem;color:var(--qyl-ink-soft);}
+.qyl-creator__nums b{color:var(--qyl-teal-deep);}
+
+/* ---------- wall ---------- */
+.qyl-wall{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem;}
+.qyl-wall figure{margin:0;border-radius:14px;overflow:hidden;position:relative;border:1px solid var(--qyl-line);background:#fff;transition:.25s;}
+.qyl-wall figure:hover{transform:translateY(-4px);box-shadow:var(--qyl-shadow);}
+.qyl-wall img{width:100%;height:100%;object-fit:cover;display:block;}
+.qyl-wall .qyl-w2{grid-column:span 2;grid-row:span 2;}
+.qyl-wall .qyl-w3{grid-column:span 3;grid-row:span 2;}
+.qyl-wall .qyl-w1{grid-column:span 1;grid-row:span 1;}
+.qyl-wall .qyl-w2s{grid-column:span 2;grid-row:span 1;}
+
+/* ---------- reviews ---------- */
+.qyl-reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;}
+.qyl-review{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:18px;padding:1.05rem;
+  display:flex;flex-direction:column;gap:.5rem;
+}
+.qyl-review__head{display:flex;align-items:center;gap:.55rem;}
+.qyl-review__name{font-size:.86rem;font-weight:700;color:var(--qyl-ink);}
+.qyl-review__tag{font-size:.7rem;color:var(--qyl-muted);}
+.qyl-review p{font-size:.85rem;color:#33545f;margin:0;}
+.qyl-stars{color:#f0a83c;font-size:.8rem;letter-spacing:.1em;}
+
+/* ---------- timeline / news ---------- */
+.qyl-news{display:grid;gap:.9rem;}
+.qyl-news__item{
+  display:grid;grid-template-columns:110px 1fr;gap:1rem;background:#fff;
+  border:1px solid var(--qyl-line);border-radius:16px;padding:.9rem 1.1rem;transition:.2s;
+}
+.qyl-news__item:hover{border-color:rgba(31,191,165,.5);}
+.qyl-news__date{font-size:.78rem;font-weight:700;color:var(--qyl-teal-deep);}
+.qyl-news__date span{display:block;font-weight:500;color:var(--qyl-muted);font-size:.72rem;}
+.qyl-news__title{font-size:.95rem;font-weight:700;color:var(--qyl-ink);margin-bottom:.25rem;}
+.qyl-news__desc{font-size:.83rem;color:var(--qyl-muted);margin:0;}
+
+/* ---------- faq ---------- */
+.qyl-faq{display:grid;gap:.7rem;max-width:880px;}
+.qyl-faq details{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:14px;padding:.2rem .35rem;
+  transition:.2s;
+}
+.qyl-faq details[open]{border-color:rgba(31,191,165,.55);box-shadow:0 8px 20px rgba(15,47,61,.06);}
+.qyl-faq summary{
+  list-style:none;cursor:pointer;padding:.75rem .85rem;font-weight:700;font-size:.92rem;
+  color:var(--qyl-ink);display:flex;justify-content:space-between;gap:.6rem;align-items:center;
+}
+.qyl-faq summary::-webkit-details-marker{display:none;}
+.qyl-faq summary::after{
+  content:"+";font-size:1.1rem;color:var(--qyl-teal-deep);font-weight:700;flex:none;
+}
+.qyl-faq details[open] summary::after{content:"–";}
+.qyl-faq p{padding:0 .85rem .85rem;font-size:.86rem;color:var(--qyl-muted);margin:0;}
+
+/* ---------- partners & contact ---------- */
+.qyl-partners{display:grid;grid-template-columns:repeat(6,1fr);gap:.8rem;}
+.qyl-partner{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:14px;padding:.9rem .5rem;
+  text-align:center;font-size:.84rem;font-weight:700;color:var(--qyl-ink-soft);
+  transition:.2s;
+}
+.qyl-partner:hover{background:var(--qyl-mint);color:var(--qyl-teal-deep);}
+.qyl-contact{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:1.4rem;align-items:start;
+}
+.qyl-contact__card{
+  background:#fff;border:1px solid var(--qyl-line);border-radius:18px;padding:1.4rem;
+}
+.qyl-contact__card h3{font-size:1rem;margin-bottom:.6rem;}
+.qyl-contact__card p{font-size:.86rem;color:var(--qyl-muted);}
+.qyl-contact__list{display:grid;gap:.5rem;font-size:.86rem;color:var(--qyl-ink-soft);}
+.qyl-contact__list b{color:var(--qyl-teal-deep);}
+.qyl-social{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.9rem;}
+
+/* ---------- CTA strip ---------- */
+.qyl-cta{
+  background:linear-gradient(120deg,var(--qyl-ink),#14505c 60%,#0f8d7a);
+  border-radius:22px;padding:2rem clamp(1.1rem,3vw,2.4rem);color:#d7f3ef;
+  display:flex;flex-wrap:wrap;gap:1.2rem;align-items:center;justify-content:space-between;
+}
+.qyl-cta h2{color:#fff;font-size:clamp(1.3rem,2.4vw,1.7rem);margin-bottom:.4rem;}
+.qyl-cta p{margin:0;font-size:.9rem;color:#b7e3dd;max-width:44em;}
+
+/* ---------- footer ---------- */
+.qyl-footer{background:#0b2430;color:#9dc2c6;padding:2.6rem 0 1.4rem;font-size:.84rem;}
+.qyl-footer__grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:1.6rem;}
+.qyl-footer h4{color:#e5fbf7;font-size:.92rem;margin-bottom:.7rem;}
+.qyl-footer a:hover{color:#8ef0e2;}
+.qyl-footer ul{display:grid;gap:.38rem;}
+.qyl-footer__brand{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem;}
+.qyl-footer__brand .qyl-brand__mark{width:34px;height:34px;border-radius:10px;}
+.qyl-footer__brand span{color:#e5fbf7;font-weight:800;letter-spacing:.03em;}
+.qyl-footer__bottom{
+  margin-top:1.8rem;padding-top:1rem;border-top:1px solid rgba(157,194,198,.18);
+  display:flex;justify-content:space-between;gap:.8rem;flex-wrap:wrap;font-size:.78rem;color:#7fa3a8;
+}
+
+/* ---------- back to top ---------- */
+.qyl-top{
+  position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--qyl-line);background:#fff;color:var(--qyl-teal-deep);
+  display:flex;align-items:center;justify-content:center;box-shadow:var(--qyl-shadow);
+  opacity:0;pointer-events:none;transition:.25s;z-index:80;
+}
+.qyl-top.is-show{opacity:1;pointer-events:auto;}
+.qyl-top svg{width:16px;height:16px;fill:currentColor;}
+
+/* ---------- toast & modal ---------- */
+.qyl-toast{
+  position:fixed;left:50%;bottom:30px;transform:translateX(-50%) translateY(20px);
+  background:var(--qyl-ink);color:#d7f3ef;padding:.55rem 1.1rem;border-radius:999px;
+  font-size:.84rem;box-shadow:var(--qyl-shadow);opacity:0;pointer-events:none;transition:.3s;z-index:120;
+}
+.qyl-toast.is-show{opacity:1;transform:translateX(-50%) translateY(0);}
+.qyl-modal{
+  position:fixed;inset:0;background:rgba(8,30,38,.55);display:none;
+  align-items:center;justify-content:center;padding:1.2rem;z-index:130;backdrop-filter:blur(3px);
+}
+.qyl-modal.is-open{display:flex;}
+.qyl-modal__panel{
+  background:#fff;border-radius:20px;max-width:520px;width:100%;
+  padding:1.5rem;max-height:86vh;overflow:auto;position:relative;
+  box-shadow:0 24px 60px rgba(0,0,0,.3);
+}
+.qyl-modal__close{
+  position:absolute;top:.7rem;right:.7rem;border:0;background:var(--qyl-paper);
+  width:30px;height:30px;border-radius:50%;color:var(--qyl-ink-soft);font-size:1rem;
+}
+.qyl-modal__panel h3{font-size:1.1rem;margin-bottom:.6rem;}
+.qyl-form{display:grid;gap:.6rem;margin-top:.8rem;}
+.qyl-form label{font-size:.8rem;font-weight:700;color:var(--qyl-ink-soft);}
+.qyl-form input,.qyl-form textarea,.qyl-form select{
+  width:100%;padding:.55rem .7rem;border:1px solid var(--qyl-line);border-radius:10px;
+  font-family:inherit;font-size:.88rem;color:var(--qyl-text);background:var(--qyl-paper);
+  outline:none;
+}
+.qyl-form input:focus,.qyl-form textarea:focus,.qyl-form select:focus{border-color:var(--qyl-teal);background:#fff;}
+.qyl-share-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:.8rem;}
+.qyl-share-grid button{
+  border:1px solid var(--qyl-line);background:var(--qyl-paper);border-radius:12px;
+  padding:.7rem .4rem;font-size:.84rem;font-weight:700;color:var(--qyl-ink-soft);transition:.2s;
+}
+.qyl-share-grid button:hover{background:var(--qyl-mint);border-color:var(--qyl-teal);color:var(--qyl-teal-deep);}
+.qyl-modal p{font-size:.86rem;color:var(--qyl-muted);}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .qyl-hero__grid{grid-template-columns:1fr;gap:1.8rem;}
+  .qyl-focus{grid-template-columns:1fr;}
+  .qyl-focus__side{grid-template-columns:1fr 1fr;display:grid;}
+  .qyl-grid-3{grid-template-columns:repeat(2,1fr);}
+  .qyl-grid-4{grid-template-columns:repeat(2,1fr);}
+  .qyl-reviews{grid-template-columns:repeat(2,1fr);}
+  .qyl-footer__grid{grid-template-columns:1fr 1fr;}
+  .qyl-contact{grid-template-columns:1fr;}
+  .qyl-analysis__cols{grid-template-columns:1fr;}
+  .qyl-partners{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:860px){
+  .qyl-nav{display:none;}
+  .qyl-search{display:none;}
+  .qyl-burger{display:flex;}
+  .qyl-header__inner{gap:.6rem;}
+  .qyl-hero__stats{gap:.6rem;}
+  .qyl-stat__num{font-size:1.25rem;}
+  .qyl-focus__side{grid-template-columns:1fr;}
+  .qyl-wall{grid-template-columns:repeat(4,1fr);}
+  .qyl-wall .qyl-w3{grid-column:span 4;}
+}
+@media (max-width:640px){
+  .qyl-section{padding:2.4rem 0;}
+  .qyl-grid-3,.qyl-grid-4,.qyl-reviews{grid-template-columns:1fr;}
+  .qyl-hero__stats{grid-template-columns:1fr 1fr 1fr;gap:.45rem;}
+  .qyl-stat{padding:.65rem .6rem;}
+  .qyl-stat__num span{display:block;margin-left:0;}
+  .qyl-wall{grid-template-columns:repeat(2,1fr);}
+  .qyl-wall .qyl-w2,.qyl-wall .qyl-w2s{grid-column:span 2;grid-row:span 1;}
+  .qyl-wall .qyl-w3{grid-column:span 2;grid-row:span 1;}
+  .qyl-news__item{grid-template-columns:1fr;gap:.3rem;}
+  .qyl-footer__grid{grid-template-columns:1fr;}
+  .qyl-partners{grid-template-columns:repeat(2,1fr);}
+  .qyl-announcement__inner{font-size:.76rem;}
+  html{scroll-padding-top:150px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="qyl-sticky-shell">
+  <div class="qyl-announcement" role="region" aria-label="官方公告">
+    <div class="qyl-announcement__inner">
+      <span class="qyl-announcement__badge">最新入口</span>
+      <p class="qyl-announcement__text">青娱乐平台 11 月内容更新：新增「青年影像挑战赛」报名通道，创作者中心同步上线剪辑脚本模板下载；企业动态与专题企划每期更新。</p>
+      <a class="qyl-announcement__link" href="#qyl-news">查看更新详情 →</a>
+    </div>
+  </div>
+
+  <header class="qyl-header">
+    <div class="qyl-header__inner">
+      <a class="qyl-brand" href="#qyl-top" aria-label="青娱乐官方网站首页">
+        <span class="qyl-brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg>
+        </span>
+        <span>
+          <span class="qyl-brand__name">青娱乐</span>
+          <span class="qyl-brand__slogan">QING YULE</span>
+        </span>
+      </a>
+      <nav class="qyl-nav" aria-label="主导航">
+        <ul class="qyl-nav__list">
+          <li><a class="qyl-nav__link is-active" href="#qyl-top">首页</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-focus">焦点内容</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-topics">专题企划</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-creators">创作者</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-wall">影像墙</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-news">企业动态</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-faq">帮助</a></li>
+          <li><a class="qyl-nav__link" href="#qyl-contact">联系</a></li>
+        </ul>
+      </nav>
+      <div class="qyl-header__tools">
+        <div class="qyl-search">
+          <input class="qyl-search__input" id="qylSearchInput" type="search" placeholder="搜索青娱乐内容…" aria-label="搜索内容">
+          <button class="qyl-search__btn" id="qylSearchBtn" type="button" aria-label="搜索">
+            <svg viewBox="0 0 24 24"><path d="M10 2a8 8 0 016.3 12.9l5 5-1.4 1.4-5-5A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"/></svg>
+          </button>
+          <ul class="qyl-search__hint" id="qylSearchHint" aria-live="polite"></ul>
+        </div>
+        <button class="qyl-burger" id="qylBurger" type="button" aria-label="展开导航" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+    <div class="qyl-mobile-nav" id="qylMobileNav">
+      <ul>
+        <li><a href="#qyl-top">首页</a></li>
+        <li><a href="#qyl-focus">焦点内容</a></li>
+        <li><a href="#qyl-topics">专题企划</a></li>
+        <li><a href="#qyl-creators">创作者</a></li>
+        <li><a href="#qyl-wall">影像墙</a></li>
+        <li><a href="#qyl-news">企业动态</a></li>
+        <li><a href="#qyl-faq">帮助</a></li>
+        <li><a href="#qyl-contact">联系</a></li>
+      </ul>
+    </div>
+  </header>
+</div>
+
+<main id="qyl-top">
+
+  <!-- ============ HERO ============ -->
+  <section class="qyl-hero">
+    <div class="qyl-wrap qyl-hero__grid">
+      <div>
+        <h1 class="qyl-hero__title"><small>品牌官网 · 青春影像</small>青娱乐最新入口</h1>
+        <p class="qyl-hero__lead">青娱乐是面向青年群体与内容创作者的青春影像品牌，官方网站汇聚原创、正版、高清的短剧、纪实、访谈与生活方式视频，以持续运营的社区生态陪伴每一位创作者与企业伙伴成长。</p>
+        <div class="qyl-hero__meta">
+          <span class="qyl-chip qyl-chip--accent">官方网站</span>
+          <span class="qyl-chip">原创正版</span>
+          <span class="qyl-chip">高清品质</span>
+          <span class="qyl-chip">创作者社区</span>
+        </div>
+        <div class="qyl-hero__actions">
+          <a class="qyl-btn qyl-btn--primary" href="#qyl-focus">浏览焦点内容</a>
+          <a class="qyl-btn qyl-btn--ghost" href="#qyl-creators">认识创作者</a>
+          <button class="qyl-btn qyl-btn--soft" data-qyl-modal="submit" type="button">投稿入口</button>
+        </div>
+        <div class="qyl-hero__stats">
+          <div class="qyl-stat">
+            <div class="qyl-stat__num" data-qyl-count="12800">0<span>+</span></div>
+            <div class="qyl-stat__label">原创作品</div>
+          </div>
+          <div class="qyl-stat">
+            <div class="qyl-stat__num" data-qyl-count="360">0<span>万</span></div>
+            <div class="qyl-stat__label">社区用户</div>
+          </div>
+          <div class="qyl-stat">
+            <div class="qyl-stat__num" data-qyl-count="420">0<span>位</span></div>
+            <div class="qyl-stat__label">签约创作者</div>
+          </div>
+        </div>
+      </div>
+      <div class="qyl-hero__visual">
+        <div class="qyl-hero__frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b3b4a'/%3E%3Cstop offset='0.55' stop-color='%23136b71'/%3E%3Cstop offset='1' stop-color='%2323c6ae'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23g1)'/%3E%3Ccircle cx='600' cy='130' r='170' fill='%2338e0c8' opacity='0.18'/%3E%3Ccircle cx='160' cy='420' r='120' fill='%2338e0c8' opacity='0.12'/%3E%3Cg fill='none' stroke='%23bff5ee' stroke-width='3' opacity='0.8'%3E%3Cpath d='M120 360 L300 240 L470 330 L660 190'/%3E%3C/g%3E%3Cg fill='%23eafffb'%3E%3Ccircle cx='120' cy='360' r='9'/%3E%3Ccircle cx='300' cy='240' r='9'/%3E%3Ccircle cx='470' cy='330' r='9'/%3E%3Ccircle cx='660' cy='190' r='9'/%3E%3C/g%3E%3Crect x='90' y='80' width='250' height='52' rx='26' fill='%23ffffff' opacity='0.16'/%3E%3Ctext x='118' y='114' font-family='sans-serif' font-size='24' fill='%23eafffb'%3E青春 · 影像 · 现场%3C/text%3E%3Cg transform='translate(560 330)'%3E%3Ccircle r='56' fill='%23ffffff' opacity='0.92'/%3E%3Cpath d='M-16 -24 L34 0 L-16 24 Z' fill='%230f8d7a'/%3E%3C/g%3E%3Ctext x='92' y='452' font-family='sans-serif' font-size='20' fill='%23c9f5ee'%3E青娱乐 · 官方品牌视觉 · 原创内容生态%3C/text%3E%3C/svg%3E" alt="青娱乐品牌主视觉，青年影像与原创内容生态的抽象城市天际线构图" width="800" height="500">
+        </div>
+        <div class="qyl-hero__float">
+          <span class="qyl-dot"></span>
+          <span>本月新增作品 <strong>326</strong> 部 · 持续运营中</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO / ANALYSIS ============ -->
+  <section class="qyl-section">
+    <div class="qyl-wrap">
+      <div class="qyl-analysis">
+        <span class="qyl-eyebrow">Brand Statement</span>
+        <h2>青娱乐最新入口：青春内容品牌的官方门户与生态解析</h2>
+        <p>作为国内专注于青年影像与原创内容的视频品牌，青娱乐官方网站承担着内容发布、创作者聚合与企业沟通三重角色。我们坚持用真实、温暖、有力量的镜头记录当代青年的日常：从城市探索到兴趣同好，从创作幕后到行业观察，青娱乐以精品内容为核心，以社区互动为纽带，构建一个多元、包容、可持续成长的内容生态。平台深耕垂直领域多年，通过专业的内容审核、高清的播放体验与正版授权体系，成为众多用户首选的青年影像入口，也以行业领先的运营标准赢得口碑与信赖。</p>
+        <p>青娱乐最新入口并不只是一个页面地址的变化，它代表品牌对内容入口体验的持续打磨：更清晰的导航、更快的加载、更完整的创作者档案与更透明的企业动态。我们相信，内容入口应当像一扇敞开的门，让观众在三秒内找到想看的故事，让创作者在五分钟内完成从灵感到发布的闭环。以下从品牌定位、内容生态、创作机制与社区文化四个维度，对青娱乐的官方门户进行系统解析。</p>
+        <div class="qyl-analysis__cols">
+          <div>
+            <h3>一、品牌定位：青春叙事的长期主义</h3>
+            <p>青娱乐将自身定位为“青年影像的长期陪伴者”。我们不追逐短期热点，而是用持续运营的方式培育内容土壤。品牌每年设置四季主题企划，覆盖春日的城市漫步、夏日的户外挑战、秋日的文化访谈与冬日的治愈影像。每一季都由官方发布选题指南，创作者可围绕指南自由创作，最终由编辑团队与企业伙伴共同评选精品内容。这种机制让青娱乐最新入口始终保持内容的新鲜度与品质感，也让参与者在创作过程中获得成长。</p>
+            <h3>二、内容生态：从单一视频到多维表达</h3>
+            <p>在青娱乐，一条视频并不是终点。我们围绕每个主题构建视频、图文、访谈与线下活动的组合表达。以“城市探索”为例，创作者既可以用五分钟纪录短片呈现街巷细节，也可以用图文攻略补充拍摄路线，还可以在社区发起同城拍摄挑战。平台提供统一的素材库与脚本模板，帮助创作者把创意快速落地。内容生态的多元性，让不同表达习惯的创作者都能找到位置，也让观众从不同角度理解同一座城市。</p>
+            <ul>
+              <li>原创优先：官方发布的内容均经过授权核验，正版高清是基本标准。</li>
+              <li>垂直深耕：聚焦青年生活方式，围绕真实故事建立选题库。</li>
+              <li>社区共建：投票、挑战、报名等机制让用户参与内容走向。</li>
+            </ul>
+          </div>
+          <div>
+            <h3>三、创作机制：让专业与热爱并存</h3>
+            <p>青娱乐的创作者体系分为签约创作者、合作机构与社区新人三个层级。签约创作者享有选题共创、设备支持与商业合作对接；合作机构可以发起品牌命题，由平台组织创作比赛；社区新人则通过投稿入口提交作品，优秀者进入新人榜并获得官方推荐。我们为每个层级提供清晰的成长路径与数据反馈，让创作者知道自己的内容被谁看见、为什么被喜欢。这种透明的机制，是青娱乐品牌故事中最被创作者认可的部分。</p>
+            <h3>四、社区文化：真实、温暖、有力量</h3>
+            <p>社区是青娱乐的灵魂。我们鼓励真实表达，反对流量焦虑；鼓励善意讨论，反对恶意比较。评论区里既有专业的技术建议，也有生活化的鼓励；作品墙上有精心构图的大片，也有手机随手拍的日常。青娱乐最新入口在社区模块中保留了“创作灵感”“投稿指南”“互动区”等常驻入口，让新用户快速融入，也让老用户持续获得陪伴感。我们相信，一个有温度的社区，比任何算法都更懂得内容的价值。</p>
+            <h3>五、企业责任与未来方向</h3>
+            <p>青娱乐将社会责任融入日常运营：为校园创作者提供免费培训，为公益影像项目提供传播支持，为青年就业提供实践岗位。未来，我们将继续完善版权保护体系、升级高清播放技术、拓展线下影像活动，让青娱乐官方网站成为青年影像文化的一张名片。我们也期待更多企业与创作者加入，共同把这份关于青春的事业做得更长久、更扎实。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOCUS ============ -->
+  <section class="qyl-section qyl-section--tint" id="qyl-focus">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Focus</span>
+        <h2>焦点内容：本周值得一看的原创影像</h2>
+        <p>由青娱乐编辑团队与社区投票共同选出，覆盖城市、文化、生活方式与创作幕后，所有内容均为正版高清发布。</p>
+      </div>
+      <div class="qyl-focus">
+        <article class="qyl-card qyl-focus__big">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%230b2e3a'/%3E%3Cstop offset='1' stop-color='%231f9e8c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Cpath d='M0 300 L120 220 L240 270 L360 180 L480 230 L640 140 L640 360 L0 360Z' fill='%230b3b48' opacity='0.85'/%3E%3Cg fill='%23eafffb' opacity='0.9'%3E%3Crect x='90' y='90' width='14' height='120'/%3E%3Crect x='120' y='130' width='14' height='80'/%3E%3Crect x='150' y='70' width='14' height='140'/%3E%3Crect x='180' y='150' width='14' height='60'/%3E%3C/g%3E%3Ccircle cx='500' cy='100' r='46' fill='%2338e0c8' opacity='0.55'/%3E%3Ctext x='40' y='330' font-family='sans-serif' font-size='22' fill='%23d9fbf5'%3E城市夜行者 · 纪录片%3C/text%3E%3C/svg%3E" alt="城市夜行者纪录片封面，夜色中的城市楼群与霓虹灯光">
+            <span class="qyl-cover__tag">焦点首推</span>
+            <span class="qyl-cover__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+            <span class="qyl-cover__shade"></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">城市夜行者：三个青年用镜头记录凌晨四点的街</h3>
+            <p class="qyl-card__desc">跟随青娱乐签约创作者，走进便利店、桥洞与未熄灯的写字楼，看一座城市在安静时刻的真实表情。完整访谈与拍摄手记同步发布。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="林岸" data-field="纪实导演" data-bio="青娱乐签约纪实导演，专注城市与人物故事，作品以自然光与长镜头见长。">
+                <span class="qyl-avatar" style="background:#b6f2e7">林</span>林岸
+              </span>
+              <span class="qyl-card__stats">12.6 万播放 · 3 天前</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+              <button class="qyl-icon-btn" data-qyl-share type="button">分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="qyl-focus__side">
+          <article class="qyl-card">
+            <div class="qyl-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%23f4a259'/%3E%3Ccircle cx='300' cy='80' r='90' fill='%23ffe0b8' opacity='0.8'/%3E%3Crect x='40' y='150' width='120' height='90' rx='10' fill='%23b8561f'/%3E%3Crect x='60' y='120' width='80' height='40' rx='8' fill='%23ffe9cf'/%3E%3Cpath d='M180 240 L260 130 L340 240Z' fill='%23d9772f'/%3E%3Ctext x='34' y='48' font-family='sans-serif' font-size='18' fill='%235a2a09'%3E小店主理人%3C/text%3E%3C/svg%3E" alt="小店主理人系列封面，暖橙色系街角小店插画">
+              <span class="qyl-cover__tag">生活方式</span>
+              <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+            </div>
+            <div class="qyl-card__body">
+              <h3 class="qyl-card__title">小店主理人：一间十五平米咖啡馆的三年</h3>
+              <p class="qyl-card__desc">从选址到菜单迭代，记录年轻主理人的经营日常。</p>
+              <div class="qyl-card__foot">
+                <span class="qyl-card__author" data-qyl-modal="creator" data-name="周梧" data-field="生活记录" data-bio="生活方式创作者，擅长小空间与人物经营故事。">
+                  <span class="qyl-avatar" style="background:#ffd9b8">周</span>周梧
+                </span>
+                <span class="qyl-card__stats">6.2 万播放</span>
+              </div>
+            </div>
+          </article>
+          <article class="qyl-card">
+            <div class="qyl-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%23233b6b'/%3E%3Ccircle cx='120' cy='110' r='60' fill='%235d7fe0' opacity='0.75'/%3E%3Cpath d='M40 230 Q120 140 200 210 T360 170' stroke='%239fc0ff' stroke-width='6' fill='none'/%3E%3Cg fill='%23cfe0ff'%3E%3Ccircle cx='300' cy='70' r='6'/%3E%3Ccircle cx='330' cy='110' r='4'/%3E%3Ccircle cx='270' cy='40' r='3'/%3E%3C/g%3E%3Ctext x='30' y='48' font-family='sans-serif' font-size='18' fill='%23dfe9ff'%3E声音采集计划%3C/text%3E%3C/svg%3E" alt="声音采集计划封面，深蓝色夜空与声波曲线插画">
+              <span class="qyl-cover__tag">文化访谈</span>
+              <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+            </div>
+            <div class="qyl-card__body">
+              <h3 class="qyl-card__title">声音采集计划：把老城区的声音做成一张专辑</h3>
+              <p class="qyl-card__desc">叫卖、车铃、方言童谣，一次关于城市听觉记忆的访谈。</p>
+              <div class="qyl-card__foot">
+                <span class="qyl-card__author" data-qyl-modal="creator" data-name="沈听" data-field="文化访谈" data-bio="声音与文化访谈创作者，长期记录城市听觉档案。">
+                  <span class="qyl-avatar" style="background:#c9d8ff">沈</span>沈听
+                </span>
+                <span class="qyl-card__stats">4.8 万播放</span>
+              </div>
+            </div>
+          </article>
+          <article class="qyl-card">
+            <div class="qyl-cover">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%231a4a3c'/%3E%3Ccircle cx='90' cy='200' r='110' fill='%232f7a5f'/%3E%3Cpath d='M200 220 L260 90 L320 220Z' fill='%23a8e6c9'/%3E%3Cg stroke='%23e6fff2' stroke-width='3' fill='none'%3E%3Cpath d='M230 210 L260 140 L290 210'/%3E%3C/g%3E%3Ctext x='28' y='46' font-family='sans-serif' font-size='18' fill='%23d6fbe8'%3E山野手作%3C/text%3E%3C/svg%3E" alt="山野手作封面，绿色山峦与手工工具插画">
+              <span class="qyl-cover__tag">手作DIY</span>
+              <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+            </div>
+            <div class="qyl-card__body">
+              <h3 class="qyl-card__title">山野手作：用一块旧木料做一把折叠椅</h3>
+              <p class="qyl-card__desc">全程无旁白的手作过程记录，附材料清单与工具攻略。</p>
+              <div class="qyl-card__foot">
+                <span class="qyl-card__author" data-qyl-modal="creator" data-name="木野" data-field="手作工艺" data-bio="木作创作者，主张用旧料做耐用的日常器物。">
+                  <span class="qyl-avatar" style="background:#b8eccb">木</span>木野
+                </span>
+                <span class="qyl-card__stats">3.9 万播放</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO STREAM ============ -->
+  <section class="qyl-section">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Stream</span>
+        <h2>热门视频流：来自青娱乐社区的真实创作</h2>
+        <p>六条不同题材的原创内容，涵盖日常记录、经验分享、深度测评与萌宠日常，点击卡片可查看摘要与作者信息。</p>
+      </div>
+      <div class="qyl-grid-3">
+        <article class="qyl-card">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23c7d9ff'/%3E%3Ccircle cx='320' cy='60' r='46' fill='%23fff6c9'/%3E%3Cpath d='M0 180 Q100 120 200 165 T400 150 L400 225 L0 225Z' fill='%237c9be0'/%3E%3Cg fill='%23ffffff' opacity='0.85'%3E%3Crect x='60' y='130' width='10' height='50'/%3E%3Crect x='80' y='110' width='10' height='70'/%3E%3Crect x='100' y='145' width='10' height='35'/%3E%3C/g%3E%3Ctext x='22' y='38' font-family='sans-serif' font-size='16' fill='%23293f7a'%3E城市漫步%3C/text%3E%3C/svg%3E" alt="城市漫步系列封面，蓝灰色调的城市与天空插画">
+            <span class="qyl-cover__tag">城市探索</span>
+            <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">一条街的十二种走法：老城区的慢速地图</h3>
+            <p class="qyl-card__desc">不赶景点，只记录转角、树荫与早点摊，适合周末半日。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="许行" data-field="城市探索" data-bio="城市漫步创作者，专注步行路线与街区观察。"><span class="qyl-avatar" style="background:#c7d9ff">许</span>许行</span>
+              <span class="qyl-card__stats">5.1 万播放</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="qyl-card">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f7d6e0'/%3E%3Ccircle cx='100' cy='90' r='64' fill='%23ff9fb6'/%3E%3Cpath d='M220 60 Q300 40 340 110 T320 200' stroke='%23c94f74' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='150' cy='170' r='8'/%3E%3Ccircle cx='190' cy='190' r='5'/%3E%3Ccircle cx='250' cy='150' r='6'/%3E%3C/g%3E%3Ctext x='22' y='38' font-family='sans-serif' font-size='16' fill='%237a2c44'%3E情感故事%3C/text%3E%3C/svg%3E" alt="情感故事系列封面，粉色系抽象线条与圆形插画">
+            <span class="qyl-cover__tag">情感故事</span>
+            <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">给三年后的自己写一封信：一个普通青年的年度复盘</h3>
+            <p class="qyl-card__desc">关于选择、告别与重新出发，评论区留下你的年度关键词。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="陈屿" data-field="情感记录" data-bio="情感记录创作者，擅长以书信体讲述普通人的故事。"><span class="qyl-avatar" style="background:#ffd0dc">陈</span>陈屿</span>
+              <span class="qyl-card__stats">7.4 万播放</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="qyl-card">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23212d3f'/%3E%3Crect x='40' y='40' width='320' height='145' rx='10' fill='%232b3d54'/%3E%3Cg stroke='%2359e0c8' stroke-width='2' fill='none'%3E%3Cpath d='M60 100 L120 100 L140 70 L170 130 L200 90 L230 110 L280 110 L300 85 L340 85'/%3E%3C/g%3E%3Ctext x='22' y='30' font-family='sans-serif' font-size='16' fill='%2390f0e0'%3E科技测评%3C/text%3E%3C/svg%3E" alt="科技测评系列封面，深色背景与荧光绿色曲线插画">
+            <span class="qyl-cover__tag">深度测评</span>
+            <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">三款入门摄影灯横评：预算五百怎么选</h3>
+            <p class="qyl-card__desc">实测色温、显色与续航，给独立创作者一份实用购买攻略。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="方一" data-field="器材测评" data-bio="影像器材测评创作者，坚持自购自测，结论可复核。"><span class="qyl-avatar" style="background:#b0f0e4">方</span>方一</span>
+              <span class="qyl-card__stats">9.8 万播放</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="qyl-card">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23fff2d6'/%3E%3Ccircle cx='140' cy='120' r='52' fill='%23ffc97a'/%3E%3Ccircle cx='180' cy='100' r='26' fill='%23ffe8bd'/%3E%3Ccircle cx='300' cy='150' r='40' fill='%23ffb15c'/%3E%3Cpath d='M0 200 L400 200 L400 225 L0 225Z' fill='%23e8a24a'/%3E%3Ctext x='22' y='36' font-family='sans-serif' font-size='16' fill='%237a4a12'%3E萌宠日常%3C/text%3E%3C/svg%3E" alt="萌宠日常系列封面，暖黄色圆形与宠物剪影插画">
+            <span class="qyl-cover__tag">萌宠日常</span>
+            <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">和一只猫合租的第 200 天：租房养宠的真实成本</h3>
+            <p class="qyl-card__desc">医疗、用品、时间投入逐项记录，给准备养宠的年轻人参考。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="江豆" data-field="萌宠记录" data-bio="宠物日常创作者，主张理性养宠与科学喂养。"><span class="qyl-avatar" style="background:#ffe0b0">江</span>江豆</span>
+              <span class="qyl-card__stats">11.2 万播放</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="qyl-card">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23e8e1ff'/%3E%3Cpath d='M50 170 L130 70 L210 150 L290 60 L370 160' stroke='%23806bd6' stroke-width='7' fill='none' stroke-linecap='round'/%3E%3Cg fill='%23b9a9ff'%3E%3Ccircle cx='130' cy='70' r='10'/%3E%3Ccircle cx='290' cy='60' r='10'/%3E%3C/g%3E%3Ctext x='22' y='36' font-family='sans-serif' font-size='16' fill='%234a3b8f'%3E创作幕后%3C/text%3E%3C/svg%3E" alt="创作幕后系列封面，紫色系折线与节点插画">
+            <span class="qyl-cover__tag">创作幕后</span>
+            <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">一条两分钟短片，脚本改了十一稿</h3>
+            <p class="qyl-card__desc">从分镜到调色，完整拆解创作流程，附可下载脚本模板。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="洛川" data-field="短片导演" data-bio="剧情短片导演，乐于分享完整的创作流程与失败经验。"><span class="qyl-avatar" style="background:#d8ccff">洛</span>洛川</span>
+              <span class="qyl-card__stats">8.3 万播放</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="qyl-card">
+          <div class="qyl-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23dff3e2'/%3E%3Cpath d='M0 190 Q100 130 200 180 T400 160 L400 225 L0 225Z' fill='%237cc08f'/%3E%3Ccircle cx='320' cy='60' r='40' fill='%23fff3b0'/%3E%3Cpath d='M80 180 L110 100 L140 180Z' fill='%233f7a52'/%3E%3Cpath d='M150 180 L180 120 L210 180Z' fill='%23569468'/%3E%3Ctext x='22' y='36' font-family='sans-serif' font-size='16' fill='%23265635'%3E户外活动%3C/text%3E%3C/svg%3E" alt="户外活动系列封面，自然绿山丘与太阳插画">
+            <span class="qyl-cover__tag">户外活动</span>
+            <span class="qyl-cover__play"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          </div>
+          <div class="qyl-card__body">
+            <h3 class="qyl-card__title">新手第一次徒步：路线选择与装备清单</h3>
+            <p class="qyl-card__desc">从五公里轻徒步开始，用一次真实行程讲清安全与节奏。</p>
+            <div class="qyl-card__foot">
+              <span class="qyl-card__author" data-qyl-modal="creator" data-name="原野" data-field="户外记录" data-bio="户外活动创作者，专注轻量化徒步与入门科普。"><span class="qyl-avatar" style="background:#c4ecc9">原</span>原野</span>
+              <span class="qyl-card__stats">6.7 万播放</span>
+            </div>
+            <div class="qyl-card__ops">
+              <button class="qyl-icon-btn" data-qyl-like type="button"><svg viewBox="0 0 24 24"><path d="M2 21h4V9H2v12zM22 10a2 2 0 00-2-2h-6.3l1-4.3A1.7 1.7 0 0013 1.7L7 9v12h11a2 2 0 002-1.7l2-7.3z"/></svg><span>点赞</span></button>
+              <button class="qyl-icon-btn" data-qyl-save type="button"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.6-9.3-9A5.4 5.4 0 0112 5.5 5.4 5.4 0 0121.3 12C19 16.4 12 21 12 21z"/></svg><span>收藏</span></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOPICS ============ -->
+  <section class="qyl-section qyl-section--tint" id="qyl-topics">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Specials</span>
+        <h2>专题企划：四季内容计划与品牌共创</h2>
+        <p>青娱乐官方发布的系列企划，围绕关键词持续更新，欢迎创作者报名参与，优质作品将在官网与社区同步推荐。</p>
+      </div>
+      <div class="qyl-grid-4">
+        <article class="qyl-topic">
+          <div class="qyl-topic__top"><span class="qyl-topic__no">NO.01</span><span class="qyl-status">更新中</span></div>
+          <h3>青年影像挑战赛</h3>
+          <p>以“我的一天”为题，用不超过三分钟的影像记录真实生活。设置新人组与专业组，报名后领取官方脚本模板。</p>
+          <div class="qyl-topic__foot">已收到 214 份投稿 · 12 月截稿</div>
+        </article>
+        <article class="qyl-topic">
+          <div class="qyl-topic__top"><span class="qyl-topic__no">NO.02</span><span class="qyl-status qyl-status--warm">进行中</span></div>
+          <h3>城市声音采集计划</h3>
+          <p>把街巷里的叫卖、车铃与方言记录下来，剪辑成属于城市的听觉地图。优秀作品将收录进青娱乐年度声音专辑。</p>
+          <div class="qyl-topic__foot">合作机构 3 家 · 持续征集</div>
+        </article>
+        <article class="qyl-topic">
+          <div class="qyl-topic__top"><span class="qyl-topic__no">NO.03</span><span class="qyl-status qyl-status--calm">企划预热</span></div>
+          <h3>小店主理人观察</h3>
+          <p>走进独立书店、咖啡馆与手作工坊，记录年轻经营者的日常选择。专题包含视频、图文与经营者访谈。</p>
+          <div class="qyl-topic__foot">首批 6 家小店 · 下周上线</div>
+        </article>
+        <article class="qyl-topic">
+          <div class="qyl-topic__top"><span class="qyl-topic__no">NO.04</span><span class="qyl-status">长期企划</span></div>
+          <h3>创作幕后公开课</h3>
+          <p>由青娱乐签约创作者分享脚本、拍摄与剪辑经验，每月一期，提供回放与资料下载，面向社区免费开放。</p>
+          <div class="qyl-topic__foot">已更新 9 期 · 累计学习 3.2 万人次</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CREATORS ============ -->
+  <section class="qyl-section" id="qyl-creators">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Creators</span>
+        <h2>创作者矩阵：青娱乐社区的中坚力量</h2>
+        <p>点击创作者卡片查看档案与擅长领域。青娱乐坚持与创作者长期同行，提供选题共创、技术支持与正版保护。</p>
+      </div>
+      <div class="qyl-grid-3">
+        <article class="qyl-creator" data-qyl-modal="creator" data-name="林岸" data-field="纪实导演" data-bio="青娱乐签约纪实导演，专注城市与人物故事，作品以自然光与长镜头见长，代表作《城市夜行者》。">
+          <div class="qyl-creator__head">
+            <span class="qyl-creator__avatar" style="background:#b6f2e7">林</span>
+            <div><div class="qyl-creator__name">林岸</div><div class="qyl-creator__field">纪实导演 · 城市叙事</div></div>
+          </div>
+          <p class="qyl-creator__bio">相信真实的力量来自等待。长期拍摄夜晚与清晨的城市，习惯用长镜头保留生活的呼吸感。</p>
+          <div class="qyl-creator__nums"><span>作品 <b>86</b></span><span>粉丝 <b>42.6 万</b></span></div>
+        </article>
+        <article class="qyl-creator" data-qyl-modal="creator" data-name="周梧" data-field="生活记录" data-bio="生活方式创作者，擅长小空间与人物经营故事，作品温暖细腻，常与社区用户共同选题。">
+          <div class="qyl-creator__head">
+            <span class="qyl-creator__avatar" style="background:#ffd9b8">周</span>
+            <div><div class="qyl-creator__name">周梧</div><div class="qyl-creator__field">生活记录 · 小店故事</div></div>
+          </div>
+          <p class="qyl-creator__bio">喜欢拍店主、拍菜单、拍下午三点的光。认为日常记录本身就是一种温柔的抵抗。</p>
+          <div class="qyl-creator__nums"><span>作品 <b>64</b></span><span>粉丝 <b>28.1 万</b></span></div>
+        </article>
+        <article class="qyl-creator" data-qyl-modal="creator" data-name="方一" data-field="器材测评" data-bio="影像器材测评创作者，坚持自购自测，结论可复核，擅长把复杂参数讲成普通创作者能用的攻略。">
+          <div class="qyl-creator__head">
+            <span class="qyl-creator__avatar" style="background:#b0f0e4">方</span>
+            <div><div class="qyl-creator__name">方一</div><div class="qyl-creator__field">深度测评 · 影像器材</div></div>
+          </div>
+          <p class="qyl-creator__bio">所有设备自费购买，测试环境公开。希望帮预算有限的创作者少走弯路，把力气花在内容上。</p>
+          <div class="qyl-creator__nums"><span>作品 <b>112</b></span><span>粉丝 <b>36.9 万</b></span></div>
+        </article>
+        <article class="qyl-creator" data-qyl-modal="creator" data-name="沈听" data-field="文化访谈" data-bio="声音与文化访谈创作者，长期记录城市听觉档案，擅长以访谈呈现地方文化细节。">
+          <div class="qyl-creator__head">
+            <span class="qyl-creator__avatar" style="background:#c9d8ff">沈</span>
+            <div><div class="qyl-creator__name">沈听</div><div class="qyl-creator__field">文化访谈 · 声音档案</div></div>
+          </div>
+          <p class="qyl-creator__bio">用录音笔收集城市的边角料：方言、叫卖、雨声。相信声音是比画面更持久的记忆载体。</p>
+          <div class="qyl-creator__nums"><span>作品 <b>53</b></span><span>粉丝 <b>19.4 万</b></span></div>
+        </article>
+        <article class="qyl-creator" data-qyl-modal="creator" data-name="洛川" data-field="短片导演" data-bio="剧情短片导演，乐于分享完整的创作流程与失败经验，主张把每一次拍摄都当成练习。">
+          <div class="qyl-creator__head">
+            <span class="qyl-creator__avatar" style="background:#d8ccff">洛</span>
+            <div><div class="qyl-creator__name">洛川</div><div class="qyl-creator__field">剧情短片 · 创作幕后</div></div>
+          </div>
+          <p class="qyl-creator__bio">擅长在有限预算里讲完整的故事。公开自己的分镜本与修改记录，希望创作过程被更多人看见。</p>
+          <div class="qyl-creator__nums"><span>作品 <b>41</b></span><span>粉丝 <b>22.7 万</b></span></div>
+        </article>
+        <article class="qyl-creator" data-qyl-modal="creator" data-name="木野" data-field="手作工艺" data-bio="木作创作者，主张用旧料做耐用的日常器物，视频以过程记录与材料科普为主。">
+          <div class="qyl-creator__head">
+            <span class="qyl-creator__avatar" style="background:#b8eccb">木</span>
+            <div><div class="qyl-creator__name">木野</div><div class="qyl-creator__field">手作工艺 · 旧物改造</div></div>
+          </div>
+          <p class="qyl-creator__bio">在城郊有一间小工坊，周末开放给社区用户参观。相信慢慢做出来的东西，会用得更久。</p>
+          <div class="qyl-creator__nums"><span>作品 <b>37</b></span><span>粉丝 <b>15.3 万</b></span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WALL ============ -->
+  <section class="qyl-section qyl-section--deep" id="qyl-wall">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Gallery</span>
+        <h2>影像墙：社区用户的日常切片</h2>
+        <p>来自青娱乐社区的真实投稿，尺寸与题材各不相同，共同构成一份关于青年生活的影像档案。</p>
+      </div>
+      <div class="qyl-wall">
+        <figure class="qyl-w3">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%230f2f3d'/%3E%3Ccircle cx='450' cy='110' r='80' fill='%2338e0c8' opacity='0.5'/%3E%3Cpath d='M0 320 L150 200 L300 280 L450 160 L600 250 L600 400 L0 400Z' fill='%23135d5c'/%3E%3Cg fill='%23eafffb' font-family='sans-serif' font-size='20'%3E%3Ctext x='30' y='50'%3E凌晨四点的桥%3C/text%3E%3C/g%3E%3C/svg%3E" alt="凌晨四点的桥，深色夜景与青色灯光下的桥梁轮廓">
+        </figure>
+        <figure class="qyl-w2">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23f3c98b'/%3E%3Ccircle cx='200' cy='170' r='90' fill='%23fff0d6'/%3E%3Crect x='60' y='250' width='280' height='90' rx='12' fill='%23b9702d'/%3E%3Ctext x='26' y='50' font-family='sans-serif' font-size='20' fill='%235c360f'%3E午后咖啡馆%3C/text%3E%3C/svg%3E" alt="午后咖啡馆，暖黄色窗光与木质吧台插画">
+        </figure>
+        <figure class="qyl-w2s">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 200'%3E%3Crect width='600' height='200' fill='%2388b6e0'/%3E%3Cpath d='M0 150 Q150 80 300 130 T600 100 L600 200 L0 200Z' fill='%2336608f'/%3E%3Ctext x='26' y='46' font-family='sans-serif' font-size='20' fill='%23eaf4ff'%3E雨后的天台%3C/text%3E%3C/svg%3E" alt="雨后的天台，蓝色天空与湿地面反光">
+        </figure>
+        <figure class="qyl-w2">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Crect width='400' height='400' fill='%23e9e2ff'/%3E%3Ccircle cx='290' cy='110' r='70' fill='%23b9a9ff'/%3E%3Cpath d='M40 320 L140 180 L240 300 L340 160' stroke='%23806bd6' stroke-width='8' fill='none'/%3E%3Ctext x='26' y='50' font-family='sans-serif' font-size='20' fill='%234a3b8f'%3E剪辑台前%3C/text%3E%3C/svg%3E" alt="剪辑台前，紫色调时间线与工作画面">
+        </figure>
+        <figure class="qyl-w1">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ffd9b8'/%3E%3Ccircle cx='100' cy='90' r='50' fill='%23ff9f6e'/%3E%3Ctext x='20' y='180' font-family='sans-serif' font-size='18' fill='%236b3a14'%3E早餐摊%3C/text%3E%3C/svg%3E" alt="早餐摊，橙色圆形与热气腾腾的早餐插画">
+        </figure>
+        <figure class="qyl-w1">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23c4ecc9'/%3E%3Cpath d='M20 170 L80 60 L140 170Z' fill='%233f7a52'/%3E%3Ctext x='20' y='190' font-family='sans-serif' font-size='18' fill='%23265635'%3E山野徒步%3C/text%3E%3C/svg%3E" alt="山野徒步，绿色山峰与路径插画">
+        </figure>
+        <figure class="qyl-w1">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23ffd0dc'/%3E%3Cpath d='M100 160 C40 120 30 70 70 60 C90 55 100 75 100 75 C100 75 110 55 130 60 C170 70 160 120 100 160Z' fill='%23c94f74'/%3E%3Ctext x='20' y='190' font-family='sans-serif' font-size='18' fill='%237a2c44'%3E手写信%3C/text%3E%3C/svg%3E" alt="手写信，粉色心形与信纸元素插画">
+        </figure>
+        <figure class="qyl-w1">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23fff2d6'/%3E%3Ccircle cx='100' cy='100' r='46' fill='%23ffc97a'/%3E%3Ctext x='20' y='190' font-family='sans-serif' font-size='18' fill='%237a4a12'%3E猫在窗边%3C/text%3E%3C/svg%3E" alt="猫在窗边，暖黄色圆形与猫咪剪影插画">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="qyl-section">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Voice</span>
+        <h2>用户评价：来自社区的真实声音</h2>
+        <p>青娱乐重视每一条反馈，以下评价来自不同使用场景，涵盖内容、功能与社区氛围。</p>
+      </div>
+      <div class="qyl-reviews">
+        <div class="qyl-review">
+          <div class="qyl-review__head"><span class="qyl-avatar" style="background:#b6f2e7">阿</span><div><div class="qyl-review__name">阿澈</div><div class="qyl-review__tag">社区用户 · 加入 2 年</div></div></div>
+          <div class="qyl-stars">★★★★★</div>
+          <p>最喜欢青娱乐的城市探索内容，路线具体、拍摄克制，跟着视频走过好几次，几乎没有踩雷。</p>
+        </div>
+        <div class="qyl-review">
+          <div class="qyl-review__head"><span class="qyl-avatar" style="background:#ffd9b8">夏</span><div><div class="qyl-review__name">夏鸣</div><div class="qyl-review__tag">独立创作者</div></div></div>
+          <div class="qyl-stars">★★★★★</div>
+          <p>投稿入口很清晰，反馈也及时。第一次投稿就收到了编辑的建议，对新人来说这种耐心很难得。</p>
+        </div>
+        <div class="qyl-review">
+          <div class="qyl-review__head"><span class="qyl-avatar" style="background:#c9d8ff">老</span><div><div class="qyl-review__name">老周</div><div class="qyl-review__tag">企业合作方</div></div></div>
+          <div class="qyl-stars">★★★★☆</div>
+          <p>合作过一次品牌命题，流程规范，数据反馈透明。能看到内容生态的长期价值，愿意继续合作。</p>
+        </div>
+        <div class="qyl-review">
+          <div class="qyl-review__head"><span class="qyl-avatar" style="background:#d8ccff">小</span><div><div class="qyl-review__name">小满</div><div class="qyl-review__tag">学生用户</div></div></div>
+          <div class="qyl-stars">★★★★★</div>
+          <p>创作幕后公开课帮了大忙，脚本模板直接能用。希望以后多出一些剪辑节奏方面的内容。</p>
+        </div>
+        <div class="qyl-review">
+          <div class="qyl-review__head"><span class="qyl-avatar" style="background:#b8eccb">林</span><div><div class="qyl-review__name">林间</div><div class="qyl-review__tag">户外爱好者</div></div></div>
+          <div class="qyl-stars">★★★★☆</div>
+          <p>徒步入门那期很实用，装备清单不夸张。就是希望路线信息能再详细一点，比如交通和补给点。</p>
+        </div>
+        <div class="qyl-review">
+          <div class="qyl-review__head"><span class="qyl-avatar" style="background:#ffd0dc">苏</span><div><div class="qyl-review__name">苏打</div><div class="qyl-review__tag">社区用户 · 加入 1 年</div></div></div>
+          <div class="qyl-stars">★★★★★</div>
+          <p>评论区氛围是真的好，讨论技术也讨论生活，很少见戾气。青娱乐最新入口改版后找内容更方便了。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section class="qyl-section qyl-section--tint" id="qyl-news">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Newsroom</span>
+        <h2>企业动态：青娱乐官方发布与更新日志</h2>
+        <p>关于平台功能、内容企划与社区活动的官方说明，重要更新会在此持续同步。</p>
+      </div>
+      <div class="qyl-news">
+        <div class="qyl-news__item">
+          <div class="qyl-news__date">2026-11-18<span>官方发布</span></div>
+          <div>
+            <div class="qyl-news__title">「青年影像挑战赛」报名通道开启</div>
+            <p class="qyl-news__desc">面向所有社区创作者开放，分新人组与专业组，投稿截止 12 月 20 日，获奖作品将在官网首页推荐并获得创作支持。</p>
+          </div>
+        </div>
+        <div class="qyl-news__item">
+          <div class="qyl-news__date">2026-11-12<span>功能更新</span></div>
+          <div>
+            <div class="qyl-news__title">创作者中心新增脚本模板下载与选题库</div>
+            <p class="qyl-news__desc">签约创作者与社区新人均可使用，包含分镜表、访谈提纲与剪辑节奏参考，后续将按月补充新模板。</p>
+          </div>
+        </div>
+        <div class="qyl-news__item">
+          <div class="qyl-news__date">2026-11-05<span>内容企划</span></div>
+          <div>
+            <div class="qyl-news__title">「城市声音采集计划」第二批作品上线</div>
+            <p class="qyl-news__desc">本期收录来自六座城市的街巷声音，包含方言童谣与夜市叫卖，专题页已同步更新收听指南与创作手记。</p>
+          </div>
+        </div>
+        <div class="qyl-news__item">
+          <div class="qyl-news__date">2026-10-28<span>社区公告</span></div>
+          <div>
+            <div class="qyl-news__title">关于版权保护与内容审核的说明</div>
+            <p class="qyl-news__desc">青娱乐持续完善正版授权核验流程，对原创内容提供发布存证与侵权处理通道，保护创作者与企业的合法权益。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ + CONTACT ============ -->
+  <section class="qyl-section" id="qyl-faq">
+    <div class="qyl-wrap">
+      <div class="qyl-section-head">
+        <span class="qyl-eyebrow">Support</span>
+        <h2>帮助中心与联系入口</h2>
+        <p>关于投稿、账号、版权与合作的常见问题，也可以直接提交反馈或联系官方团队。</p>
+      </div>
+      <div class="qyl-faq">
+        <details open>
+          <summary>如何通过青娱乐最新入口提交原创作品？</summary>
+          <p>登录账号后进入创作者中心，点击「投稿入口」，按提示上传视频文件与封面，填写标题、简介与标签即可。建议先阅读投稿指南，确认画幅、时长与素材授权信息。</p>
+        </details>
+        <details>
+          <summary>作品审核一般需要多久？</summary>
+          <p>常规审核周期为 1 至 3 个工作日。涉及版权材料的作品可能需要补充说明，审核结果会通过站内消息通知，请留意消息中心。</p>
+        </details>
+        <details>
+          <summary>青娱乐对视频画质有什么要求？</summary>
+          <p>建议分辨率不低于 1080P，横屏 16:9 或竖屏 9:16 均可。平台提供高清转码与统一播放体验，上传前请确保素材无第三方版权争议。</p>
+        </details>
+        <details>
+          <summary>品牌或企业如何与青娱乐展开内容合作？</summary>
+          <p>可通过页面底部的合作邮箱联系商务团队，说明品牌背景、合作目标与预算周期。我们会根据内容生态匹配适合的企划形式，包括专题共创、命题比赛与创作者联名。</p>
+        </details>
+        <details>
+          <summary>社区账号可以修改昵称与个人简介吗？</summary>
+          <p>可以。在个人中心进入资料编辑页面即可修改昵称、头像与简介，修改后需通过审核，通常十分钟内生效。</p>
+        </details>
+        <details>
+          <summary>发现侵权或不当内容如何处理？</summary>
+          <p>可在对应内容页面使用「反馈」按钮提交说明与证明材料，或发送邮件至官方邮箱。青娱乐设有专门的处理通道，会在核实后及时跟进。</p>
+        </details>
+      </div>
+
+      <div class="qyl-contact" id="qyl-contact" style="margin-top:2.4rem;">
+        <div class="qyl-contact__card">
+          <span class="qyl-eyebrow">Contact</span>
+          <h3>与青娱乐官方团队取得联系</h3>
+          <p>无论你是创作者、企业合作方还是社区用户，都欢迎与我们沟通。青娱乐坚持用户至上，认真对待每一条来自真实使用场景的建议。</p>
+          <div class="qyl-contact__list">
+            <div>合作邮箱：<b>brand@qingyule.example</b></div>
+            <div>投稿咨询：<b>creator@qingyule.example</b></div>
+            <div>反馈通道：<b>support@qingyule.example</b></div>
+            <div>办公地址：<b>青娱乐内容中心 · 城市创意园区 B 座</b></div>
+            <div>服务时间：<b>工作日 10:00 – 19:00</b></div>
+          </div>
+          <div class="qyl-social">
+            <button class="qyl-btn qyl-btn--primary" data-qyl-modal="submit" type="button">我要投稿</button>
+            <button class="qyl-btn qyl-btn--ghost" data-qyl-modal="feedback" type="button">提交反馈</button>
+            <button class="qyl-btn qyl-btn--ghost" data-qyl-share type="button">分享官网</button>
+          </div>
+        </div>
+        <div class="qyl-contact__card">
+          <h3>合作品牌墙</h3>
+          <p style="font-size:.86rem;color:var(--qyl-muted);">青娱乐与多家机构保持长期内容合作，共同支持青年影像创作。</p>
+          <div class="qyl-partners" style="grid-template-columns:repeat(3,1fr);margin-top:.8rem;">
+            <div class="qyl-partner">城市文创</div>
+            <div class="qyl-partner">光影器材</div>
+            <div class="qyl-partner">青年书店</div>
+            <div class="qyl-partner">山野户外</div>
+            <div class="qyl-partner">声音工坊</div>
+            <div class="qyl-partner">校园影像社</div>
+          </div>
+          <p style="font-size:.78rem;color:var(--qyl-muted);margin-top:.9rem;">以上为合作展示位，具体合作以官方发布为准。</p>
+        </div>
+      </div>
+
+      <div style="margin-top:2.2rem;">
+        <div class="qyl-cta">
+          <div>
+            <h2>把你的故事，放进青娱乐的影像档案</h2>
+            <p>青娱乐官方网站持续开放投稿与报名，欢迎记录真实、温暖、有力量的日常。加入社区，与四百余位创作者一起成长。</p>
+          </div>
+          <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+            <button class="qyl-btn qyl-btn--primary" data-qyl-modal="submit" type="button">立即投稿</button>
+            <a class="qyl-btn qyl-btn--line" href="#qyl-creators">查看创作者</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="qyl-footer">
+  <div class="qyl-wrap">
+    <div class="qyl-footer__grid">
+      <div>
+        <div class="qyl-footer__brand">
+          <span class="qyl-brand__mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5l12 7-12 7z"/></svg></span>
+          <span>青娱乐</span>
+        </div>
+        <p style="margin:0 0 .6rem;">青娱乐官方网站，面向青年群体与创作者的原创影像内容平台。我们以精品内容、正版授权与持续运营，构建值得信赖的内容生态。</p>
+        <p style="margin:0;font-size:.78rem;color:#7fa3a8;">企业主体：青娱乐内容科技有限公司<br>品牌口号：记录真实，陪伴成长</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#qyl-focus">焦点内容</a></li>
+          <li><a href="#qyl-topics">专题企划</a></li>
+          <li><a href="#qyl-creators">创作者矩阵</a></li>
+          <li><a href="#qyl-wall">社区影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>官方通道</h4>
+        <ul>
+          <li><a href="#qyl-news">企业动态</a></li>
+          <li><a href="#qyl-faq">帮助中心</a></li>
+          <li><a href="#qyl-contact">合作联系</a></li>
+          <li><a href="#qyl-top">青娱乐最新入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区说明</h4>
+        <ul>
+          <li>投稿指南与审核规范</li>
+          <li>版权保护与原创声明</li>
+          <li>用户至上 · 真实温暖</li>
+          <li>持续运营 · 官方发布</li>
+        </ul>
+      </div>
+    </div>
+    <div class="qyl-footer__bottom">
+      <span>© 2026 青娱乐内容科技有限公司 版权所有 · 官方网站</span>
+      <span>品牌备案信息：青娱乐 · 青春影像内容生态 | 持续运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="qyl-top" id="qylTopBtn" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 4l8 8h-5v8H9v-8H4z"/></svg>
+</button>
+
+<div class="qyl-toast" id="qylToast" role="status" aria-live="polite"></div>
+
+<div class="qyl-modal" id="qylModal" role="dialog" aria-modal="true" aria-labelledby="qylModalTitle">
+  <div class="qyl-modal__panel">
+    <button class="qyl-modal__close" id="qylModalClose" type="button" aria-label="关闭">×</button>
+    <h3 id="qylModalTitle">提示</h3>
+    <div id="qylModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- toast ---------- */
+  var toastEl = document.getElementById("qylToast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-show"); }, 2200);
+  }
+
+  /* ---------- mobile nav ---------- */
+  var burger = document.getElementById("qylBurger");
+  var mobileNav = document.getElementById("qylMobileNav");
+  burger.addEventListener("click", function(){
+    var open = mobileNav.classList.toggle("is-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  mobileNav.addEventListener("click", function(e){
+    if(e.target.tagName === "A"){
+      mobileNav.classList.remove("is-open");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* ---------- search ---------- */
+  var searchInput = document.getElementById("qylSearchInput");
+  var searchHint = document.getElementById("qylSearchHint");
+  var searchBtn = document.getElementById("qylSearchBtn");
+  var searchPool = [
+    "城市夜行者 纪录片",
+    "小店主理人 咖啡馆",
+    "声音采集计划",
+    "山野手作 折叠椅",
+    "青年影像挑战赛 报名",
+    "创作幕后 脚本模板",
+    "徒步入门 装备清单",
+    "萌宠日常 租房养宠",
+    "器材测评 摄影灯",
+    "企业动态 官方发布"
+  ];
+  function renderHint(kw){
+    var q = (kw || "").trim().toLowerCase();
+    searchHint.innerHTML = "";
+    var list = searchPool.filter(function(item){
+      return !q || item.toLowerCase().indexOf(q) > -1;
+    }).slice(0,6);
+    if(list.length === 0){
+      var li = document.createElement("li");
+      li.textContent = "暂无匹配，试试「城市」「创作」「报名」";
+      searchHint.appendChild(li);
+    }else{
+      list.forEach(function(item){
+        var li = document.createElement("li");
+        if(q){
+          var idx = item.toLowerCase().indexOf(q);
+          li.innerHTML = item.slice(0,idx) + "<em>" + item.slice(idx, idx+q.length) + "</em>" + item.slice(idx+q.length);
+        }else{
+          li.textContent = item;
+        }
+        li.addEventListener("click", function(){
+          searchInput.value = item;
+          searchHint.classList.remove("is-open");
+          toast("已定位相关内容：" + item);
+        });
+        searchHint.appendChild(li);
+      });
+    }
+    searchHint.classList.add("is-open");
+  }
+  searchInput.addEventListener("input", function(){ renderHint(searchInput.value); });
+  searchInput.addEventListener("focus", function(){ renderHint(searchInput.value); });
+  document.addEventListener("click", function(e){
+    if(!searchHint.contains(e.target) && e.target !== searchInput && e.target !== searchBtn){
+      searchHint.classList.remove("is-open");
+    }
+  });
+  searchBtn.addEventListener("click", function(){
+    var v = searchInput.value.trim();
+    toast(v ? "正在为你检索「" + v + "」相关内容" : "请输入关键词后再搜索");
+  });
+  searchInput.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+      e.preventDefault();
+      searchBtn.click();
+    }
+  });
+
+  /* ---------- like / save ---------- */
+  document.addEventListener("click", function(e){
+    var likeBtn = e.target.closest("[data-qyl-like]");
+    if(likeBtn){
+      var span = likeBtn.querySelector("span");
+      likeBtn.classList.toggle("is-liked");
+      if(likeBtn.classList.contains("is-liked")){
+        span.textContent = "已赞";
+        toast("已点赞，感谢你的支持");
+      }else{
+        span.textContent = "点赞";
+      }
+      return;
+    }
+    var saveBtn = e.target.closest("[data-qyl-save]");
+    if(saveBtn){
+      var s = saveBtn.querySelector("span");
+      saveBtn.classList.toggle("is-saved");
+      if(saveBtn.classList.contains("is-saved")){
+        s.textContent = "已收藏";
+        toast("已加入收藏夹");
+      }else{
+        s.textContent = "收藏";
+      }
+      return;
+    }
+  });
+
+  /* ---------- modal ---------- */
+  var modal = document.getElementById("qylModal");
+  var modalTitle = document.getElementById("qylModalTitle");
+  var modalBody = document.getElementById("qylModalBody");
+  var modalClose = document.getElementById("qylModalClose");
+
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+  }
+  function closeModal(){
+    modal.classList.remove("is-open");
+    document.body.style.overflow = "";
+  }
+  modalClose.addEventListener("click", closeModal);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeModal(); });
+
+  var submitHTML =
+    '<p>填写简要信息，青娱乐官方团队会通过站内消息或邮件与你联系。</p>' +
+    '<form class="qyl-form" id="qylSubmitForm">' +
+    '<div><label for="qylFormName">称呼</label><input id="qylFormName" type="text" placeholder="你的昵称或机构名称" required></div>' +
+    '<div><label for="qylFormType">投稿类型</label><select id="qylFormType"><option>原创视频</option><option>专题企划报名</option><option>图文与手记</option><option>品牌合作命题</option></select></div>' +
+    '<div><label for="qylFormDesc">作品简介</label><textarea id="qylFormDesc" rows="3" placeholder="简要说明内容主题、时长与创作背景"></textarea></div>' +
+    '<button class="qyl-btn qyl-btn--primary" type="submit" style="justify-content:center;">确认提交</button>' +
+    '</form>';
+
+  var feedbackHTML =
+    '<p>我们认真对待每一条反馈，请描述你遇到的问题或建议。</p>' +
+    '<form class="qyl-form" id="qylFeedbackForm">' +
+    '<div><label for="qylFbType">反馈类型</label><select id="qylFbType"><option>内容建议</option><option>功能异常</option><option>版权与举报</option><option>其他</option></select></div>' +
+    '<div><label for="qylFbDesc">详细说明</label><textarea id="qylFbDesc" rows="3" placeholder="请尽量描述具体页面与情况"></textarea></div>' +
+    '<button class="qyl-btn qyl-btn--primary" type="submit" style="justify-content:center;">提交反馈</button>' +
+    '</form>';
+
+  document.addEventListener("click", function(e){
+    var trigger = e.target.closest("[data-qyl-modal]");
+    if(!trigger) return;
+    e.preventDefault();
+    var type = trigger.getAttribute("data-qyl-modal");
+    if(type === "submit"){
+      openModal("投稿入口", submitHTML);
+    }else if(type === "feedback"){
+      openModal("提交反馈", feedbackHTML);
+    }else if(type === "creator"){
+      var name = trigger.getAttribute("data-name") || "创作者";
+      var field = trigger.getAttribute("data-field") || "内容创作";
+      var bio = trigger.getAttribute("data-bio") || "青娱乐社区创作者，持续分享原创内容。";
+      openModal(name + " · 创作者档案",
+        '<p style="font-size:.95rem;color:#20404b;">擅长领域：<b style="color:#0f8d7a;">' + field + '</b></p>' +
+        '<p>' + bio + '</p>' +
+        '<p style="font-size:.84rem;color:#5f7d84;">青娱乐官方签约或社区活跃创作者，作品均经授权发布。你可以在焦点内容与热门视频流中查看其作品。</p>' +
+        '<button class="qyl-btn qyl-btn--primary" type="button" id="qylFollowBtn">关注创作者</button>');
+      setTimeout(function(){
+        var fb = document.getElementById("qylFollowBtn");
+        if(fb){
+          fb.addEventListener("click", function(){
+            if(fb.dataset.followed === "1"){
+              fb.dataset.followed = "0";
+              fb.textContent = "关注创作者";
+              toast("已取消关注");
+            }else{
+              fb.dataset.followed = "1";
+              fb.textContent = "已关注";
+              toast("已关注 " + name);
+            }
+          });
+        }
+      }, 0);
+    }
+  });
+
+  document.addEventListener("submit", function(e){
+    if(e.target.id === "qylSubmitForm"){
+      e.preventDefault();
+      closeModal();
+      toast("投稿信息已记录，官方团队将尽快联系你");
+    }
+    if(e.target.id === "qylFeedbackForm"){
+      e.preventDefault();
+      closeModal();
+      toast("反馈已提交，感谢你的建议");
+    }
+  });
+
+  /* ---------- share ---------- */
+  function doShare(){
+    var title = "青娱乐最新入口";
+    var text = "青娱乐官方网站 · 青春影像内容生态";
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(document.title + " " + text).then(function(){
+        toast("链接信息已复制，可分享给朋友");
+      }).catch(function(){
+        showShareModal();
+      });
+    }else{
+      showShareModal();
+    }
+  }
+  function showShareModal(){
+    openModal("分享青娱乐官网",
+      '<p>选择分享方式，或复制页面标题与品牌信息发送给朋友。</p>' +
+      '<div class="qyl-share-grid">' +
+      '<button type="button" data-qyl-copy>复制链接信息</button>' +
+      '<button type="button" data-qyl-copy>微信分享</button>' +
+      '<button type="button" data-qyl-copy>微博分享</button>' +
+      '<button type="button" data-qyl-copy>QQ 分享</button>' +
+      '<button type="button" data-qyl-copy>社区动态</button>' +
+      '<button type="button" data-qyl-copy>保存二维码</button>' +
+      '</div>');
+  }
+  document.addEventListener("click", function(e){
+    if(e.target.closest("[data-qyl-share]")){
+      e.preventDefault();
+      doShare();
+      return;
+    }
+    if(e.target.closest("[data-qyl-copy]")){
+      var txt = document.title;
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(txt).then(function(){
+          toast("信息已复制");
+        }).catch(function(){
+          toast("已生成分享信息，请手动复制");
+        });
+      }else{
+        toast("已生成分享信息，请手动复制");
+      }
+    }
+  });
+
+  /* ---------- back to top ---------- */
+  var topBtn = document.getElementById("qylTopBtn");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 500){ topBtn.classList.add("is-show"); }
+    else{ topBtn.classList.remove("is-show"); }
+  }, {passive:true});
+  topBtn.addEventListener("click", function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+  });
+
+  /* ---------- count up ---------- */
+  var counted = false;
+  var countEls = document.querySelectorAll("[data-qyl-count]");
+  function runCount(){
+    if(counted || countEls.length === 0) return;
+    counted = true;
+    countEls.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-qyl-count"), 10) || 0;
+      var suffix = el.querySelector("span") ? el.querySelector("span").outerHTML : "";
+      var start = 0;
+      var dur = 1100;
+      var t0 = null;
+      function step(t){
+        if(!t0) t0 = t;
+        var p = Math.min((t - t0) / dur, 1);
+        var val = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+        el.innerHTML = val + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var statSection = document.querySelector(".qyl-hero__stats");
+  if("IntersectionObserver" in window && statSection){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ runCount(); io.disconnect(); }
+      });
+    }, {threshold:0.3});
+    io.observe(statSection);
+  }else{
+    runCount();
+  }
+
+  /* ---------- active nav on scroll ---------- */
+  var sections = ["qyl-top","qyl-focus","qyl-topics","qyl-creators","qyl-wall","qyl-news","qyl-faq"];
+  var navLinks = document.querySelectorAll(".qyl-nav__link");
+  window.addEventListener("scroll", function(){
+    var pos = window.scrollY + 150;
+    var current = "qyl-top";
+    sections.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el && el.offsetTop <= pos) current = id;
+    });
+    navLinks.forEach(function(a){
+      a.classList.toggle("is-active", a.getAttribute("href") === "#" + current);
+    });
+  }, {passive:true});
+
+})();
+</script>
+</body>
+          </html>
